@@ -15,7 +15,7 @@ export default function NavBar() {
   return (
     <nav className="w-full bg-primary flex justify-between items-center 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-5 p-2 text-white font-semibold">
       <Link href="/">
-        <Image src="/images/Kal-03.png" alt="Logo" width={150} height={27} />
+        <Image src="/images/Kal-03.png" alt="Logo" width={200} height={57} />
       </Link>
 
       <ul className="hidden sm:flex justify-around py-3 items-center ml-[-2px]">

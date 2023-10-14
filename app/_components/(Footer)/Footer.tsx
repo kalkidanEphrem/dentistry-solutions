@@ -63,8 +63,8 @@ export default function Footer() {
 
         <div className="col-span-2 sm:col-span-1 flex flex-col sm:items-center lg:justify-center mt-8 md:mt-0 md:mx-4">
           <h2>Opening Hours</h2>
-          <p className="mt-4 font-extralight">Mon - Thu 9:00 am - 5:00 pm</p>
-          <p className="mt-2 font-extralight">Saturday 8:00 am - 2:00 pm</p>
+          <p className="mt-4 font-extralight">Mon - Fri 9:00 am - 5:00 pm</p>
+          <p className="mt-2 font-extralight">Saturday 9:00 am - 2:00 pm</p>
         </div>
 
         <div className="col-span-2 sm:col-span-1 flex flex-col items-end sm:items-center lg:justify-center mt-8 md:mt-0">
