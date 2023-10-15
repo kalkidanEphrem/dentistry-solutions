@@ -4,6 +4,7 @@ export default function Signup() {
   return (
     <section className="w-full xl:px-28 xl:py-36 md:px-20 md:py-24 px-10 py-16 overflow-clip">
       <div className="bg-tertiary p-6 md:p-8 lg:px-16 lg:py-8 rounded-xl relative">
+        {/* decorative svg */}
         <svg
           width="510"
           height="350"
@@ -66,6 +67,7 @@ export default function Signup() {
 
         <div className="w-full lg:w-3/4 xl:w-2/3 2xl:w-1/2 flex flex-col gap-10 justify-between z-10">
           <div className="flex flex-col sm:w-max">
+            {/* icon above heading */}
             <svg
               width="56"
               height="25"
@@ -93,20 +95,20 @@ export default function Signup() {
 
           <form
             action="/"
-            className="flex flex-col sm:flex-row sm:py-1 sm:px-2 sm:bg-white items-start sm:justify-stretch rounded-md sm:shadow-lg"
+            className="flex flex-col sm:flex-row sm:py-1 sm:px-2 sm:bg-white items-stretch sm:justify-stretch rounded-md sm:shadow-lg"
           >
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Enter email adress"
-              className="min-h-[70px] rounded-md self-stretch pl-2 basis-2/3 grow text-primary focus:outline-none invalid:text-red-600 font-medium text-xl"
+              className="min-h-[70px] rounded-md pl-2 basis-2/3 grow text-primary focus:outline-none invalid:text-red-600 font-medium text-2xl"
             />
             <Link
               href="/"
-              className="py-3 px-9 rounded-md font-semibold text-center bg-primary text-white hover:cursor-pointer hover:scale-110"
+              className="text-xl sm:text-base py-5 sm:py-3 sm:px-10 rounded-md font-semibold text-center bg-primary text-white hover:cursor-pointer sm:hover:scale-110"
             >
-              Schedule <br /> Appointment
+              Schedule Appointment
             </Link>
           </form>
         </div>
