@@ -15,6 +15,7 @@ const config: Config = {
         quaternary: "#000020",
         black: "#000000",
         white: "#ffffff",
+        "card-paragraph": "#9090A7",
       },
     },
     screens: {
