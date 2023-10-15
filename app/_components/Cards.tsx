@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Cards() {
   return (
     <section className="w-full xl:px-28 xl:pt-36 md:px-20 md:pt-24 px-10 pt-16">
