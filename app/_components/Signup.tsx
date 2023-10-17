@@ -83,9 +83,9 @@ export default function Signup() {
               />
             </svg>
 
-            <h1 className="text-primary font-bold text-3xl sm:text-4xl">
+            <h2 className="text-primary font-bold text-3xl sm:text-4xl">
               Schedule Appointment
-            </h1>
+            </h2>
           </div>
           <p className="text-primary mt-3 mb-5 font-semibold text-xl">
             Your Perfect Smile Awaits: Schedule Your Dental Care Appointment

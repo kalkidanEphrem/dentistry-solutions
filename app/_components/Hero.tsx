@@ -4,7 +4,7 @@ import { RiChatQuoteFill } from "react-icons/ri";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-tertiary relative flex flex-col-reverse xl:flex-row 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-10 p-2  overflow-clip">
+    <section className="w-full bg-tertiary relative flex flex-col-reverse xl:flex-row 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-10 p-2 overflow-clip">
       {/* decorative purpose divs */}
       <div className="flex xl:max-w-[350px] xl:h-1/3 p-20 md:p-28 xl:p-52 rounded-full border-white opacity-50 border-[3.5rem] absolute top-96 sm:top-1/2 -right-32 xl:left-1/2 xl:-translate-x-1/2 sm:-translate-y-1/3 xl:sm:-translate-y-1/2 justify-center items-center">
         <div className="max-w-lg h-1/2 p-24  border-white opacity-60 border-[3.5rem] rounded-full"></div>

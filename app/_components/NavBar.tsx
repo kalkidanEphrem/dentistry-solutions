@@ -48,7 +48,7 @@ export default function NavBar() {
         <div
           className={
             nav
-              ? "fixed top-[65px] right-0 ease-in-out duration-500 w-[40%] bg-primary border-l border-gray-800"
+              ? "fixed top-[65px] right-0 ease-in-out duration-500 w-[40%] bg-primary border-l border-gray-800 z-20"
               : "fixed right-[-100%]"
           }
         >
