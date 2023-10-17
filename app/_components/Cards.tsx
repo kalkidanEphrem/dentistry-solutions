@@ -126,7 +126,7 @@ export default function Cards() {
               Choose Packages
             </h3>
 
-            <p className="mt-5 font-semibold text-lg text-card-paragraph">
+            <p className="mt-5 font-semibold text-justify text-base text-card-paragraph">
               Explore my dental packages for personalized care. Start your
               journey to optimal oral health today.
             </p>
@@ -226,7 +226,7 @@ export default function Cards() {
               Schedule appointment
             </h3>
 
-            <p className="mt-5 font-semibold text-lg text-card-paragraph">
+            <p className="mt-5 font-semibold text-justify text-base text-card-paragraph">
               Your Perfect Smile Awaits: Schedule Your Dental Care Appointment
               Today for a Lifetime of Radiant, Healthy Teeth and Unmatched Oral
               Wellness!
@@ -296,7 +296,7 @@ export default function Cards() {
 
             <h3 className="text-primary font-bold text-lg mt-14">Services</h3>
 
-            <p className="mt-5 font-semibold text-xl text-card-paragraph">
+            <p className="mt-5 font-semibold text-justify text-base text-card-paragraph">
               I'm now offering a variety of dental services including cosmetic
               dentistry and children's dentistry
             </p>

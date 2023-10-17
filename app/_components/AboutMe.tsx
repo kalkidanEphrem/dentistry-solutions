@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="w-full flex flex-col-reverse lg:flex-row lg:justify-between items-center 2xl:px-24 xl:px-16 md:px-12 px-10 lg:pb-10 lg:pt-40 pt-10 p-2">
+    <section className="w-full flex flex-col-reverse lg:flex-row lg:justify-between items-center 2xl:px-24 xl:px-16 md:px-12 px-10 lg:py-20 xl:pb-28 py-10">
       <div className="mt-10 lg:mt-0 flex flex-col self-start 2xl:self-center lg:w-1/2 justify-start p-6">
         {/* icon above heading */}
         <svg
@@ -22,7 +22,7 @@ export default function About() {
         <h2 className="text-primary font-bold text-3xl sm:text-4xl">
           About Me
         </h2>
-        <p className="mt-3 mb-5 font-semibold text-xl text-card-paragraph">
+        <p className="mt-3 mb-5 font-semibold text-justify text-xl text-card-paragraph">
           Dr Shenilee Hazell Graduated from the University of Bristol in 2007.
           After graduating from Bristol, she settled in the City of London where
           she has been successfully practising dentistry for over 11 years,

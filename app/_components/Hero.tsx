@@ -24,7 +24,7 @@ export default function Hero() {
         </div>
 
         <div className="flex xl:flex-col flex-wrap justify-around items-center gap-16 mt-14 xl:mt-32">
-          <p className="text-primary font-semibold text-xl text-center lg:w-2/3 xl:w-full">
+          <p className="text-primary font-semibold text-xl text-center lg:text-justify xl:text-center lg:w-2/3 xl:w-full">
             Your Dental Choice, I strive to be dedicate and treat your teeth,
             Try to think of me for you and your family's health
           </p>

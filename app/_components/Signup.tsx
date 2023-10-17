@@ -87,7 +87,7 @@ export default function Signup() {
               Schedule Appointment
             </h2>
           </div>
-          <p className="text-primary mt-3 mb-5 font-semibold text-xl">
+          <p className="text-primary text-justify mt-3 mb-5 font-semibold text-xl">
             Your Perfect Smile Awaits: Schedule Your Dental Care Appointment
             Today for a Lifetime of Radiant, Healthy Teeth and Unmatched Oral
             Wellness!
@@ -95,7 +95,7 @@ export default function Signup() {
 
           <form
             action="/"
-            className="flex flex-col sm:flex-row sm:py-1 sm:px-2 sm:bg-white items-stretch sm:justify-stretch rounded-md sm:shadow-lg"
+            className="flex flex-col gap-4 sm:gap-0 sm:flex-row sm:py-1 sm:px-2 sm:bg-white items-stretch sm:justify-stretch rounded-md sm:shadow-lg"
           >
             <input
               type="email"
