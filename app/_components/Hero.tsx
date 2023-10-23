@@ -11,7 +11,7 @@ export default function Hero() {
         </h1>
 
         <div className="flex flex-col justify-around gap-12 sm:mt-14">
-          <p className="text-black font-semibold text-xl xsm:text-justify w-full">
+          <p className="text-black font-bold text-2xl lg:text-xl md:text-justify w-full">
             Your Dental Choice, I strive to be dedicate and treat your teeth,
             Try to think of me for you and your family's health
           </p>
