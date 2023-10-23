@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Cards() {
   return (
-    <section className="w-full xl:px-28 xl:pt-36 md:px-20 md:pt-24 px-10 pt-16">
+    <section className="w-full xl:px-28 md:px-20 px-10 pt-16">
       <div className="flex flex-col">
         {/* icon above heading */}
         <svg
