@@ -23,7 +23,7 @@ export default async function DentalWorks() {
   const dentalWorks = data.dentalWorks;
 
   return (
-    <section className="w-full relative bg-tertiary 2xl:px-24 xl:px-16 md:px-12 lg:py-20 p-10 overflow-hidden">
+    <section className="w-full relative bg-tertiary 2xl:px-24 xl:px-16 md:px-12 lg:pt-20 lg:pb-24 p-10 overflow-hidden">
       {/* decorativ purpose div */}
       <div>
         {/* top right */}
