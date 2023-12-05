@@ -24,7 +24,7 @@ export default function Footer() {
 
           <div className="flex xl:grid grid-cols-2 gap-4 justify-start items-center md:ml-0 sm:ml-8 xl:mt-1 xl:mr-8 xl:ml-10 2xl:ml-0">
             <a
-              href="https://github.com/Joephy527"
+              href="https://www.facebook.com/kalkidan.ephrem"
               target="_blank"
               rel="noreferrer"
               className="border-gray-300 border-2 rounded-full md:ml-3 hover:cursor-pointer hover:bg-[#1877F2]"
@@ -33,7 +33,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://github.com/Joephy527"
+              href="https://www.instagram.com/kalkidanephrem_/"
               target="_blank"
               rel="noreferrer"
               className={`border-gray-300 border-2 rounded-full ml-3 hover:cursor-pointer ${styles.insta}`}
@@ -42,7 +42,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://github.com/Joephy527"
+              href="https://twitter.com/ephrem_kalkidan"
               target="_blank"
               rel="noreferrer"
               className="border-gray-300 border-2 rounded-full ml-3 hover:cursor-pointer hover:bg-[#00acee]"
@@ -51,7 +51,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://github.com/Joephy527"
+              href="https://www.linkedin.com/in/kalkidan-ephrem-92a851230"
               target="_blank"
               rel="noreferrer"
               className="border-gray-300 border-2 rounded-full ml-3 hover:cursor-pointer hover:bg-[#0072b1]"

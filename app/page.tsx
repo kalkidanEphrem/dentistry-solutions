@@ -3,11 +3,15 @@ import Cards from "./_components/Cards";
 import DentalWorks from "./_components/(DentalWorks)/DentalWorks";
 import Hero from "./_components/Hero";
 import Signup from "./_components/Signup";
+import NavBar from "./_components/NavBar";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <div className="bg-[url(/images/istockphoto-1311511363-612x612.jpg)] bg-no-repeat bg-cover">
+        <NavBar isHome={true} />
+        <Hero />
+      </div>
       <Cards />
       <AboutMe />
       <DentalWorks />
