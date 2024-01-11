@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
-import { TiSocialTwitter, TiSocialLinkedin } from "react-icons/ti";
+import { TiSocialLinkedin } from "react-icons/ti";
 import { BiLogoMeta } from "react-icons/bi";
 import { SlSocialInstagram } from "react-icons/sl";
 import { BsTelephonePlus } from "react-icons/bs";
+import { RiTwitterXLine } from "react-icons/ri";
 import { TfiEmail } from "react-icons/tfi";
 
 export default function Footer() {
@@ -45,9 +46,9 @@ export default function Footer() {
               href="https://twitter.com/ephrem_kalkidan"
               target="_blank"
               rel="noreferrer"
-              className="border-gray-300 border-2 rounded-full ml-3 hover:cursor-pointer hover:bg-[#00acee]"
+              className="group border-gray-300 border-2 p-1 rounded-full ml-3 hover:cursor-pointer hover:border-black hover:bg-white"
             >
-              <TiSocialTwitter size={30} />
+              <RiTwitterXLine size={22} className="group-hover:text-black" />
             </a>
 
             <a
