@@ -9,17 +9,11 @@ export default function Home() {
   return (
     <main>
       <div className="bg-[url(/images/istockphoto-1311511363-612x612.jpg)] bg-no-repeat bg-cover">
-<<<<<<< HEAD:app/page.tsx
         <NavBar />
 
         <Hero />
       </div>
 
-=======
-        <NavBar isHome={true} />
-        <Hero />
-      </div>
->>>>>>> origin/main:frontend/app/page.tsx
       <Cards />
 
       <AboutMe />

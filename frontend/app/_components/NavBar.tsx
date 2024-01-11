@@ -1,16 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import clsx from "clsx";
 
-type prop = {
-  isHome: boolean;
-};
-
-export default function NavBar(isHome: prop) {
+export default function NavBar() {
+  const pathName = usePathname();
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -18,54 +16,53 @@ export default function NavBar(isHome: prop) {
   };
   return (
     <nav
-      className={
-        isHome
-          ? "w-full bg-transparent flex justify-between items-center 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-5 p-2 text-black text-2xl"
-          : "w-full bg-primary flex justify-between items-center 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-5 p-2 text-white font-semibold"
-      }
+      className={clsx(
+        "flex justify-between items-center 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-5 p-2",
+        {
+          "bg-transparent  text-black text-2xl": pathName === "/",
+          "bg-primary text-white font-semibold": pathName !== "/",
+        }
+      )}
     >
       <Link href="/">
         <Image
-          src={isHome ? "/images/Kal-02.png" : "/images/Kal-03.png"}
+          src={pathName === "/" ? "/images/Kal-02.png" : "/images/Kal-03.png"}
           alt="Logo"
-          width={isHome ? 250 : 200}
+          width={pathName === "/" ? 250 : 200}
           height={57}
         />
       </Link>
 
       <ul className="hidden lg:flex justify-around py-3 items-center self-end ml-[-2px]">
         <li
-          className={
-            !isHome
-              ? "hover:text-secondary active:text-secondary"
-              : "active:border-b-2 border-black"
-          }
+          className={clsx("text-xl", {
+            "border-b-2 border-black": pathName === "/",
+            "hover:text-secondary": pathName !== "/",
+          })}
         >
           <Link href="/">Home</Link>
         </li>
 
         <li
-          className={
-            !isHome
-              ? "mx-5 hover:text-secondary active:text-secondary"
-              : "mx-5 active:border-b-2 border-black"
-          }
+          className={clsx("mx-5 text-xl", {
+            "text-secondary": pathName === "/about",
+            "hover:text-secondary": pathName !== "/",
+          })}
         >
-          <Link href="/">About me</Link>
+          <Link href="/about">About</Link>
         </li>
 
         <li
-          className={
-            !isHome
-              ? "hover:text-secondary active:text-secondary"
-              : "active:border-b-2 border-black"
-          }
+          className={clsx("text-xl", {
+            "text-secondary": pathName === "/contact",
+            "hover:text-secondary": pathName !== "/",
+          })}
         >
-          <Link href="/">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
 
-      {!isHome && (
+      {pathName !== "/" && (
         <Link
           href="/"
           className="hidden lg:block py-3 px-5 rounded-md bg-secondary hover:bg-white hover:text-secondary"
@@ -81,41 +78,39 @@ export default function NavBar(isHome: prop) {
         {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
 
         <div
-          className={
-            nav
-              ? "fixed top-[65px] right-0 ease-in-out duration-500 w-[40%] bg-transparent z-20"
-              : "fixed right-[-100%]"
-          }
+          className={clsx("fixed", {
+            "top-[65px] right-0 ease-in-out duration-500 w-[40%] z-20": nav,
+            "right-[-100%]": !nav,
+            "bg-primary": pathName !== "/",
+          })}
         >
           <ul className="p-3 text-center uppercase">
             <li
-              className={
-                isHome
-                  ? "border-b border-white active:border-b-2 active:border-black"
-                  : "border-b border-white hover:text-secondary active:text-secondary"
-              }
+              className={clsx({
+                "border-white border-b": pathName === "/",
+                "hover:text-secondary": pathName !== "/",
+              })}
             >
               <Link href="/">Home</Link>
             </li>
 
             <li
-              className={
-                isHome
-                  ? "my-2 border-b border-white active:border-b-2 active:border-black"
-                  : "my-2 border-b border-white hover:text-secondary active:text-secondary"
-              }
+              className={clsx("my-2", {
+                "border-b border-white": pathName === "/",
+                "text-secondary": pathName === "/about",
+                "hover:text-secondary": pathName !== "/",
+              })}
             >
-              <Link href="/">About me</Link>
+              <Link href="/about">About</Link>
             </li>
 
             <li
-              className={
-                !isHome
-                  ? "hover:text-secondary active:text-secondary"
-                  : "active:border-b-2 border-black"
-              }
+              className={clsx({
+                "text-secondary": pathName === "/contact",
+                "hover:text-secondary": pathName !== "/",
+              })}
             >
-              <Link href="/">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>

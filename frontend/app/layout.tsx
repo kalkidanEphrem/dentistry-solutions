@@ -6,7 +6,7 @@ import Footer from "./_components/(Footer)/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DR. Kalkidan Ephrem",
+  title: "Dr. Kalkidan Ephrem",
 };
 
 export default function RootLayout({
