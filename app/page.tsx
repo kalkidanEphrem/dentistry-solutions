@@ -9,12 +9,17 @@ export default function Home() {
   return (
     <main>
       <div className="bg-[url(/images/istockphoto-1311511363-612x612.jpg)] bg-no-repeat bg-cover">
-        <NavBar isHome={true} />
+        <NavBar />
+
         <Hero />
       </div>
+
       <Cards />
+
       <AboutMe />
+
       <DentalWorks />
+
       <Signup />
     </main>
   );
