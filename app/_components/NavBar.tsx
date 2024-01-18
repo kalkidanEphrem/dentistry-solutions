@@ -17,7 +17,7 @@ export default function NavBar() {
   return (
     <nav
       className={clsx(
-        "flex justify-between items-center 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-5 p-2",
+        "flex justify-between items-center 2xl:px-24 xl:px-16 md:px-12 p-2 sm:px-6",
         {
           "bg-transparent  text-black text-2xl": pathName === "/",
           "bg-primary text-white font-semibold": pathName !== "/",
@@ -28,12 +28,12 @@ export default function NavBar() {
         <Image
           src={pathName === "/" ? "/images/Kal-02.png" : "/images/Kal-03.png"}
           alt="Logo"
-          width={pathName === "/" ? 250 : 200}
+          width={pathName === "/" ? 250 : 150}
           height={57}
         />
       </Link>
 
-      <ul className="hidden lg:flex justify-around py-3 items-center self-end ml-[-2px]">
+      <ul className="hidden lg:flex justify-around py-2 items-center self-end ml-[-2px]">
         <li
           className={clsx("text-xl", {
             "border-b-2 border-black": pathName === "/",
