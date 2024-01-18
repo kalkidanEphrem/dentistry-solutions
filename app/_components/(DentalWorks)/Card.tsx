@@ -8,7 +8,7 @@ type prop = {
 
 export default function Card(props: prop) {
   return (
-    <div className="flex flex-col bg-white rounded-xl max-w-xs hover:scale-105 shrink-0 shadow-lg">
+    <div className="flex flex-col bg-white rounded-xl max-w-xs hover:scale-105 duration-300 shrink-0 shadow-lg">
       <Image
         src={props.src}
         height={100}
