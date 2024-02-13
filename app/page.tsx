@@ -8,7 +8,7 @@ import NavBar from "./_components/NavBar";
 export default function Home() {
   return (
     <main>
-      <div className="bg-[url(/images/istockphoto-1311511363-612x612.jpg)] bg-no-repeat bg-cover">
+      <div className="bg-[url(/images/istockphoto-1311511363-612x612.jpg)] bg-no-repeat bg-cover min-h-screen">
         <NavBar />
 
         <Hero />

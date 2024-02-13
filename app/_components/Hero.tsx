@@ -3,7 +3,7 @@ import { RiChatQuoteFill } from "react-icons/ri";
 
 export default function Hero() {
   return (
-    <section className="w-full relative flex flex-col-reverse xl:flex-row 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-11 p-2 overflow-clip">
+    <section className="w-full relative flex flex-col-reverse xl:flex-row 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-7 p-2 overflow-clip">
       <div className="w-1/2 p-5 z-10">
         <h1 className="hidden sm:block text-black font-bold text-2xl sm:text-4xl">
           DR. Kalkidan Ephrem

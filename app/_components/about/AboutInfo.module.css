@@ -1,0 +1,42 @@
+.imageToAbs {
+  animation: to-absolute 700ms ease-in-out forwards;
+  transition: all;
+}
+
+.imageToNorm {
+  animation: to-normal 500ms ease-in-out forwards;
+  transition: all;
+}
+
+@keyframes to-absolute {
+  from {
+    bottom: 0rem;
+    right: 0rem;
+  }
+
+  25% {
+    bottom: -1rem;
+    right: -1.5rem;
+  }
+
+  50% {
+    bottom: -2rem;
+    right: -3rem;
+  }
+
+  75% {
+    bottom: -3rem;
+    right: -4.5rem;
+  }
+
+  to {
+    bottom: -4rem;
+    right: -6rem;
+  }
+}
+
+@keyframes to-normal {
+  to {
+    position: static;
+  }
+}
