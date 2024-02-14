@@ -9,7 +9,7 @@ import { BsTelephonePlus } from "react-icons/bs";
 import { RiTwitterXLine } from "react-icons/ri";
 import { TfiEmail } from "react-icons/tfi";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="w-full">
       <section className="min-h-[250px] bg-primary xl:grid-cols-4 md:grid-cols-3 grid-cols-2 grid 2xl:px-24 xl:px-16 sm:px-10 sm:py-12 p-6 text-white font-semibold">
@@ -100,4 +100,6 @@ export default function Footer() {
       </section>
     </footer>
   );
-}
+};
+
+export default Footer;

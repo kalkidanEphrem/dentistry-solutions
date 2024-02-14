@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Cards() {
+const InfoCards = () => {
   return (
     <section className="w-full xl:px-28 md:px-20 px-10 pt-16">
       <div className="flex flex-col">
@@ -91,4 +91,6 @@ export default function Cards() {
       </div>
     </section>
   );
-}
+};
+
+export default InfoCards;

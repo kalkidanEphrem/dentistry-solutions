@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SignupForm from "./SignupForm";
 
-export default function Signup() {
+const Signup = () => {
   return (
     <section className="w-full xl:px-28 xl:py-36 md:px-20 md:py-24 px-10 py-16 overflow-clip">
       <div className="bg-tertiary p-6 md:p-8 lg:px-16 lg:py-8 rounded-xl relative">
@@ -40,4 +40,6 @@ export default function Signup() {
       </div>
     </section>
   );
-}
+};
+
+export default Signup;

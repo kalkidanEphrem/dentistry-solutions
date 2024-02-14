@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import Card from "./Card";
+import ServiceCard from "./ServiceCard";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,9 +15,9 @@ type items = {
   id: string;
 };
 
-export default async function DentalWorks() {
+const DentalWorks = async () => {
   const file = await fs.readFile(
-    process.cwd() + "/app/_components/(DentalWorks)/dentalWorks.json",
+    process.cwd() + "/app/_components/home/(DentalWorks)/dentalWorks.json",
     "utf8"
   );
   const data: data = JSON.parse(file);
@@ -100,7 +100,7 @@ export default async function DentalWorks() {
       <div className="flex flex-wrap gap-10 md:gap-5 justify-around items-center">
         {dentalWorks.map((item: items) => (
           <Link key={item.id} href={item.link} className="z-10">
-            <Card
+            <ServiceCard
               src={item.src}
               heading={item.heading}
               content={item.content}
@@ -110,4 +110,6 @@ export default async function DentalWorks() {
       </div>
     </section>
   );
-}
+};
+
+export default DentalWorks;

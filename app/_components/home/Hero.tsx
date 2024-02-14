@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { RiChatQuoteFill } from "react-icons/ri";
 
-export default function Hero() {
+const Hero = () => {
   return (
     <section className="w-full relative flex flex-col-reverse xl:flex-row 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-7 p-2 overflow-clip">
       <div className="w-1/2 p-5 z-10">
@@ -33,4 +33,6 @@ export default function Hero() {
       </div>
     </section>
   );
-}
+};
+
+export default Hero;

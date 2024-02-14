@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function About() {
+const About = () => {
   return (
     <section className="w-full flex flex-col-reverse lg:flex-row lg:justify-between items-center 2xl:px-24 xl:px-16 md:px-12 px-10 lg:py-32 xl:pb-28 py-10">
       <div className="mt-10 lg:mt-0 flex flex-col self-start 2xl:self-center lg:w-1/2 justify-start p-6">
@@ -41,4 +41,6 @@ export default function About() {
       </div>
     </section>
   );
-}
+};
+
+export default About;
