@@ -79,6 +79,7 @@ const Footer = () => {
 
           <div className="mt-2 flex items-start">
             <TfiEmail size={20} />
+            
             <Link
               className="font-extralight ml-2"
               href="mailto: Kalkidan.ephrem@aau.edu.et"
