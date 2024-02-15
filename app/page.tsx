@@ -1,20 +1,20 @@
-import AboutMe from "./_components/AboutMe";
-import Cards from "./_components/Cards";
-import DentalWorks from "./_components/(DentalWorks)/DentalWorks";
-import Hero from "./_components/Hero";
-import Signup from "./_components/Signup";
+import AboutMe from "./_components/home/AboutMe";
+import InfoCards from "./_components/home/InfoCards";
+import DentalWorks from "./_components/home/(DentalWorks)/DentalWorks";
+import Hero from "./_components/home/Hero";
+import Signup from "./_components/home/Signup";
 import NavBar from "./_components/NavBar";
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
-      <div className="bg-[url(/images/istockphoto-1311511363-612x612.jpg)] bg-no-repeat bg-cover">
+      <div className="bg-[url(/images/istockphoto-1311511363-612x612.jpg)] bg-no-repeat bg-cover min-h-screen">
         <NavBar />
 
         <Hero />
       </div>
 
-      <Cards />
+      <InfoCards />
 
       <AboutMe />
 
@@ -23,4 +23,6 @@ export default function Home() {
       <Signup />
     </main>
   );
-}
+};
+
+export default Home;

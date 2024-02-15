@@ -7,7 +7,7 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import clsx from "clsx";
 
-export default function NavBar() {
+const NavBar = () => {
   const pathName = usePathname();
   const [nav, setNav] = useState(false);
 
@@ -117,4 +117,6 @@ export default function NavBar() {
       </div>
     </nav>
   );
-}
+};
+
+export default NavBar;
