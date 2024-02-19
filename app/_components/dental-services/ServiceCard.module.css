@@ -1,0 +1,114 @@
+.leftImage {
+  animation: left-image 2000ms ease-in-out 1 normal forwards;
+}
+
+.rightImage {
+  animation: right-image 2000ms ease-in-out 1 normal forwards;
+}
+
+.leftIcon {
+  animation: left-icon 2000ms ease-in-out 1 normal forwards;
+}
+
+.rightIcon {
+  animation: right-icon 2000ms ease-in-out 1 normal forwards;
+}
+
+.leftHeading {
+  animation: left-heading 2000ms ease-in-out 1 normal forwards;
+}
+.rightHeading {
+  animation: right-heading 2000ms ease-in-out 1 normal forwards;
+}
+.leftParagraph {
+  animation: left-paragraph 2000ms ease-in-out 1 normal forwards;
+}
+.rightParagraph {
+  animation: right-paragraph 2000ms ease-in-out 1 normal forwards;
+}
+
+@keyframes left-image {
+  from {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(px);
+  }
+}
+
+@keyframes right-image {
+  from {
+    opacity: 0;
+    transform: translateX(80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(px);
+  }
+}
+
+@keyframes left-icon {
+  from {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(px);
+  }
+}
+
+@keyframes right-icon {
+  from {
+    opacity: 0;
+    transform: translateX(80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(px);
+  }
+}
+@keyframes left-heading {
+  from {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(px);
+  }
+}
+
+@keyframes right-heading {
+  from {
+    opacity: 0;
+    transform: translateX(80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(px);
+  }
+}
+@keyframes left-paragraph {
+  from {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(px);
+  }
+}
+
+@keyframes right-paragraph {
+  from {
+    opacity: 0;
+    transform: translateX(80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(px);
+  }
+}
