@@ -3,7 +3,7 @@ import Hero from "../_components/dental-services/Hero";
 import Services from "../_components/dental-services/Services";
 import Signup from "../_components/dental-services/Signup";
 
-const page = () => {
+const DentalServices = () => {
   return (
     <main>
       <NavBar />
@@ -17,4 +17,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default DentalServices;
