@@ -16,6 +16,8 @@ const config: Config = {
         black: "#000000",
         white: "#ffffff",
         "card-paragraph": "#9090A7",
+        "about-heading-1": "#1C2F41",
+        "about-heading-2": "#14A39A",
       },
     },
     screens: {
