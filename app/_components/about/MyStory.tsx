@@ -4,7 +4,7 @@ const MyStory = () => {
   return (
     <section className="2xl:px-24 xl:px-16 md:px-12 sm:px-6 px-2 pb-5 pt-10 lg:flex items-center justify-evenly">
       <div className="basis-1/2 max-w-2xl mx-auto xl:max-w-none">
-        <h2 className="font-semibold text-5xl text-about-heading-1 mb-6 sm:mb-16">
+        <h2 className="font-semibold text-5xl text-primary mb-6 sm:mb-16">
           My Story
         </h2>
 

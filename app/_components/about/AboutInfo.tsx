@@ -12,7 +12,7 @@ const AboutInfo = () => {
   return (
     <section className="bg-tertiary 2xl:px-24 xl:px-16 md:px-12 sm:px-6 px-2 pt-10 pb-16 flex lg:items-center flex-col gap-6 lg:gap-10 xl:gap-6 lg:flex-row">
       <div className="flex-1 max-w-lg sm:max-w-2xl mx-auto xl:max-w-5xl">
-        <h2 className="font-semibold text-4xl text-about-heading-1 lg:max-w-[300px] mb-2.5">
+        <h2 className="font-semibold text-4xl text-primary lg:max-w-[300px] mb-2.5">
           Education and Experience
         </h2>
 

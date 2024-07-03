@@ -15,7 +15,7 @@ const SignupForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-4xl w-full flex flex-col mt-4 mb-20 gap-4 sm:flex-row sm:py-1 sm:px-2 items-stretch sm:justify-stretch"
+      className="max-w-4xl w-full flex flex-col mt-4 mb-20 gap-4 md:flex-row sm:py-1 md:px-2 items-stretch sm:justify-stretch"
     >
       <input
         type="email"
@@ -29,7 +29,7 @@ const SignupForm = () => {
 
       <button
         type="submit"
-        className="text-xl sm:text-base py-5 sm:py-3 sm:px-10 rounded-md font-semibold text-center bg-primary text-white hover:cursor-pointer sm:hover:scale-110 duration-300"
+        className="text-xl sm:text-base py-5 md:py-3 md:px-10 rounded-md font-semibold text-center bg-footer-primary text-white hover:cursor-pointer md:hover:scale-105 duration-300"
       >
         Schedule Appointment
       </button>

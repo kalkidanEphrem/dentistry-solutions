@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ServiceCard from "./ServiceCard";
 import { services } from "./data";
 
@@ -10,14 +9,14 @@ const Services = () => {
       </h2>
 
       {services.map((service, idx) => (
-        <Link href={`dental-services/${service.id}`} key={service.id}>
-          <ServiceCard
-            imageSrc={service.src}
-            title={service.heading}
-            description={service.content}
-            index={idx}
-          />
-        </Link>
+        <ServiceCard
+          key={service.id}
+          imageSrc={service.src}
+          title={service.heading}
+          description={service.content}
+          index={idx}
+          id={service.id}
+        />
       ))}
     </section>
   );
