@@ -1,8 +1,11 @@
 "use client";
 
-import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+
+import clsx from "clsx";
+
 import styles from "./ServiceCard.module.css";
 
 type prop = {
@@ -10,6 +13,7 @@ type prop = {
   title: string;
   description: string;
   index: number;
+  id: string;
 };
 
 const ServiceCard = (props: prop) => {
@@ -44,29 +48,16 @@ const ServiceCard = (props: prop) => {
 
   return (
     <div
-      className="flex items-center gap-5 my-3 max-w-5xl xl:max-w-7xl lg:p-5 lg:rounded-lg hover:scale-105 lg:shadow-lg duration-300 ease-in-out"
+      className="flex items-center gap-12 my-3 max-w-5xl xl:max-w-7xl duration-300 ease-in-out"
       ref={cardRef}
     >
-      <Image
-        src={props.imageSrc}
-        width={500}
-        height={500}
-        alt={`${props.title}`}
-        className={
-          isVisible
-            ? !isMultipleOfTwo
-              ? `hidden shrink lg:block ${styles.leftImage}`
-              : `hidden shrink lg:block ${styles.rightImage}`
-            : "hidden shrink lg:block"
-        }
-      />
-
       <div
         className={clsx(
-          "flex flex-col gap-5 lg:basis-1/2 justify-between shadow-lg rounded-lg border p-5 lg:shadow-none lg:rounded-none border-none",
+          `overflow-clip hidden lg:block shadow-lg ${isVisible ? (!isMultipleOfTwo ? `shrink ${styles.leftImage}` : `shrink ${styles.rightImage}`) : "shrink"}`,
           {
-            "-order-1": !!isMultipleOfTwo,
-          }
+            "rounded-r-3xl": !!isMultipleOfTwo,
+            "rounded-l-3xl": !isMultipleOfTwo,
+          },
         )}
       >
         <Image
@@ -74,13 +65,26 @@ const ServiceCard = (props: prop) => {
           width={500}
           height={500}
           alt={`${props.title}`}
-          className={
-            isVisible
-              ? !isMultipleOfTwo
-                ? `shrink lg:hidden rounded-xl ${styles.leftImage}`
-                : `shrink lg:hidden rounded-xl ${styles.rightImage}`
-              : "shrink lg:hidden rounded-xl"
-          }
+          className="hover:scale-110 duration-300 ease-in-out"
+        />
+      </div>
+
+      <div
+        className={clsx(
+          `flex flex-col gap-5 lg:basis-1/2 justify-between bg-tertiary shadow-lg p-2 sm:p-5 ${isVisible ? (!isMultipleOfTwo ? `shrink ${styles.rightImage}` : `shrink ${styles.leftImage}`) : "shrink"}`,
+          {
+            "-order-1 rounded-3xl lg:rounded-r-none lg:rounded-l-2xl":
+              !!isMultipleOfTwo,
+            "lg:rounded-r-3xl lg:rounded-l-none rounded-2xl": !isMultipleOfTwo,
+          },
+        )}
+      >
+        <Image
+          src={props.imageSrc}
+          width={500}
+          height={500}
+          alt={`${props.title}`}
+          className={clsx({ "shrink lg:hidden rounded-xl": isVisible })}
         />
 
         <Image
@@ -88,38 +92,32 @@ const ServiceCard = (props: prop) => {
           width={150}
           height={140}
           alt="service icon"
-          className={
-            isVisible
-              ? !isMultipleOfTwo
-                ? `hidden lg:block ${styles.rightIcon}`
-                : `hidden lg:block ${styles.leftIcon}`
-              : "hidden lg:block"
-          }
+          className={clsx({ "lg:block hidden self-center": isVisible })}
         />
 
         <h3
-          className={
-            isVisible
-              ? !isMultipleOfTwo
-                ? `text-4xl font-semibold text-primary mb-5 lg:mb-10 ${styles.rightHeading}`
-                : `text-4xl font-semibold text-primary mb-5 lg:mb-10 ${styles.leftHeading}`
-              : "text-4xl font-semibold text-primary mb-5 lg:mb-10"
-          }
+          className={clsx({
+            "sm:text-4xl text-2xl font-semibold text-primary lg:mb-5":
+              isVisible,
+          })}
         >
           {props.title}
         </h3>
 
         <p
-          className={
-            isVisible
-              ? !isMultipleOfTwo
-                ? `text-2x max-w-96 ${styles.rightParagraph}`
-                : `text-2x max-w-96 ${styles.leftParagraph}`
-              : "text-2x max-w-96"
-          }
+          className={clsx({
+            "sm:text-2xl text-black/65 text-base max-w-96": isVisible,
+          })}
         >
           {props.description}
         </p>
+
+        <Link
+          href={`/dental-services/${props.id}`}
+          className="border-footer-primary border px-4 py-2 text-sm sm:text-base ml-auto rounded-lg hover:scale-105 duration-300 ease-in-out"
+        >
+          Read More
+        </Link>
       </div>
     </div>
   );

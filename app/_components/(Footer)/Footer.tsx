@@ -12,7 +12,7 @@ import { TfiEmail } from "react-icons/tfi";
 const Footer = () => {
   return (
     <footer className="w-full">
-      <section className="min-h-[250px] bg-primary xl:grid-cols-4 md:grid-cols-3 grid-cols-2 grid 2xl:px-24 xl:px-16 sm:px-10 sm:py-12 p-6 text-white font-semibold">
+      <section className="min-h-[250px] bg-footer-primary xl:grid-cols-4 md:grid-cols-3 grid-cols-2 grid 2xl:px-24 xl:px-16 sm:px-10 sm:py-12 p-6 text-white font-semibold">
         <div className="flex-col sm:grid sm:grid-cols-2 gap-2 items-center md:flex-col xl:flex-row 2xl:justify-evenly xl:justify-around xl:items-center md:items-start flex md:flex col-span-2 md:col-span-1 xl:col-span-2">
           {/* Brand Logo */}
           <Link className="-mt-1" href="/">
@@ -79,7 +79,7 @@ const Footer = () => {
 
           <div className="mt-2 flex items-start">
             <TfiEmail size={20} />
-            
+
             <Link
               className="font-extralight ml-2"
               href="mailto: Kalkidan.ephrem@aau.edu.et"

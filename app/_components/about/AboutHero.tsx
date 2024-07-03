@@ -13,9 +13,8 @@ const AboutHero = () => {
       />
 
       <div className="mx-auto basis-1/2 z-10 flex flex-col self-start mt-5">
-        <h1 className="font-bold xl:text-8xl sm:text-7xl text-5xl text-about-heading-1">
-          Hi, I am <br />{" "}
-          <span className="text-about-heading-2">DR. Kalkidan</span>
+        <h1 className="font-bold xl:text-8xl sm:text-7xl text-5xl text-primary">
+          Hi, I am <br /> <span className="text-secondary">DR. Kalkidan</span>
         </h1>
 
         <div className="sm:p-12 pt-12 sm:self-end self-center max-w-[75%]">
