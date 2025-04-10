@@ -1,9 +1,8 @@
-// BlogPage.tsx
 "use client";
 import React, { useState } from "react";
 import BlogCards from "./BlogCards";
 import Pagination from "./Pagination";
-import { blogs } from "../../data"; // Import blogs data
+import { blogs } from "../../data";
 
 interface Blog {
   id: number;
@@ -15,18 +14,20 @@ interface Blog {
 
 const BlogPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 12; // Number of blogs per page
+  const pageSize = 12;
   const totalPages = Math.ceil(blogs.length / pageSize);
 
-  // Get the blogs for the current page
-  const currentBlogs = blogs.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+  const currentBlogs = blogs.slice(
+    (currentPage - 1) * pageSize,
+    currentPage * pageSize
+  );
 
   return (
     <div className="p-8 flex flex-col gap-11">
       <div className="mt-24">
         <BlogCards blogs={currentBlogs} />
       </div>
-      <div className="my-6"> {/* Margin added for spacing */}
+      <div className="my-6">
         <Pagination totalPages={totalPages} onPageChange={setCurrentPage} />
       </div>
     </div>

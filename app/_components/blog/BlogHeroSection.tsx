@@ -1,14 +1,15 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import { FaUser } from 'react-icons/fa'; // Import FaUser icon
+import React, { useState, useEffect } from "react";
+import { FaUser } from "react-icons/fa";
 
 const BlogHeroSection = () => {
   const blogs = [
     {
       id: 1,
       title: "Technology",
-      description: "The impact of Technology on the Workplace: How Technology is Changing the Way We Work.",
+      description:
+        "The impact of Technology on the Workplace: How Technology is Changing the Way We Work.",
       author: "Kalkidan Ephrem",
       published_date: "August 20, 2022",
       imageUrl: "/images/cardImage/kal.png",
@@ -21,7 +22,7 @@ const BlogHeroSection = () => {
       author: "Jane Smith",
       published_date: "August 21, 2022",
       imageUrl: "/images/cardImage/kal.png",
-      authorImageUrl: "", // No profile image, should use default
+      authorImageUrl: "",
     },
     {
       id: 3,
@@ -30,7 +31,6 @@ const BlogHeroSection = () => {
       author: "Emily Johnson",
       published_date: "August 22, 2022",
       imageUrl: "/images/cardImage/kal.png",
-      // No authorImageUrl provided
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ const BlogHeroSection = () => {
       author: "Sarah Davis",
       published_date: "August 24, 2022",
       imageUrl: "/images/cardImage/kal.png",
-    }
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,29 +64,27 @@ const BlogHeroSection = () => {
   const currentBlog = blogs[currentIndex];
 
   return (
-    <div className="w-full h-[575px] relative overflow-hidden bg-gray-900"> 
-      {/* Dynamic Image Background */}
+    <div className="w-full h-[575px] relative overflow-hidden bg-gray-900">
       <img
         src={currentBlog.imageUrl}
         alt="Hero Background"
         className="w-full h-full object-cover"
       />
 
-      {/* Inner content positioned at the bottom left */}
       <div className="absolute bottom-0 left-0 m-8 text-white h-auto flex flex-col gap-3">
         {/* Title */}
         <div
           className="bg-[#4B6BFB] text-white text-md rounded-[6px] mb-2 flex items-center justify-center"
           style={{
-            maxWidth: '120px',
-            padding: '2px 8px',
-            fontFamily: 'Work Sans',
+            maxWidth: "120px",
+            padding: "2px 8px",
+            fontFamily: "Work Sans",
             fontWeight: 500,
-            fontSize: '14px',
-            lineHeight: '20px',
-            whiteSpace: 'nowrap',
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
+            fontSize: "14px",
+            lineHeight: "20px",
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
           }}
         >
           {currentBlog.title}
@@ -98,16 +96,20 @@ const BlogHeroSection = () => {
           style={{
             width: "720px",
             fontWeight: 600,
-            fontSize: '36px',
-            lineHeight: '40px',
+            fontSize: "36px",
+            lineHeight: "40px",
           }}
         >
           {currentBlog.description}
         </h1>
 
         {/* Author Section */}
-        <div className="flex items-center gap-4 mt-1" style={{ width: '328px', height: '36px' }}>
-          {currentBlog.authorImageUrl && currentBlog.authorImageUrl.trim() !== "" ? (
+        <div
+          className="flex items-center gap-4 mt-1"
+          style={{ width: "328px", height: "36px" }}
+        >
+          {currentBlog.authorImageUrl &&
+          currentBlog.authorImageUrl.trim() !== "" ? (
             <img
               src={currentBlog.authorImageUrl}
               alt="Author"
@@ -115,15 +117,15 @@ const BlogHeroSection = () => {
             />
           ) : (
             <div className="flex items-center justify-center w-10 h-10 bg-white rounded-full">
-              <FaUser style={{ color: 'gray', fontSize: '24px' }} /> {/* Adjust size as needed */}
+              <FaUser style={{ color: "gray", fontSize: "24px" }} />
             </div>
           )}
           <div className="flex gap-8">
             <span
               className="font-['Work_Sans'] font-bold"
               style={{
-                fontSize: '16px',
-                lineHeight: '24px',
+                fontSize: "16px",
+                lineHeight: "24px",
                 fontWeight: 500,
               }}
             >
@@ -132,8 +134,8 @@ const BlogHeroSection = () => {
             <span
               className="text-white"
               style={{
-                fontSize: '16px',
-                lineHeight: '24px',
+                fontSize: "16px",
+                lineHeight: "24px",
                 fontWeight: 300,
               }}
             >
@@ -148,7 +150,9 @@ const BlogHeroSection = () => {
         {blogs.map((_, index) => (
           <span
             key={index}
-            className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-blue-500' : 'bg-white'}`}
+            className={`w-3 h-3 rounded-full ${
+              index === currentIndex ? "bg-blue-500" : "bg-white"
+            }`}
           />
         ))}
       </div>

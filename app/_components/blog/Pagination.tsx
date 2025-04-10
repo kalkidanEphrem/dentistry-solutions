@@ -19,7 +19,7 @@ const Pagination: React.FC<PaginationProps> = ({
 
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
-    onPageChange(pageNumber); // Trigger parent component's state update
+    onPageChange(pageNumber);
   };
 
   const handleFirstPage = () => handlePageChange(1);

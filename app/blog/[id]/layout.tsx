@@ -2,13 +2,13 @@
 
 import React from "react";
 import { useParams } from "next/navigation";
-import { blogs } from "../../data"; // Adjusted to the correct relative path
+import { blogs } from "../../data";
 import InfiniteBlogCards from "@/app/_components/blog/InfiniteBlogCards";
 import QuoteBox from "@/app/_components/blog/QuoteBox";
 
 const BlogLayout = ({ children }: { children: React.ReactNode }) => {
   const { id } = useParams();
-  const blogId = parseInt(id as string, 10); // Convert string param to number
+  const blogId = parseInt(id as string, 10);
 
   const blog = blogs.find((b) => b.id === blogId);
   const quote = blog?.quote;

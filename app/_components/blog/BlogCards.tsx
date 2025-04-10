@@ -7,7 +7,7 @@ interface Blog {
   description: string;
   author: string;
   published_date: string;
-  images: string[]; // Add images array
+  images: string[];
 }
 
 interface BlogCardsProps {
@@ -21,10 +21,9 @@ const BlogCards: React.FC<BlogCardsProps> = ({ blogs }) => {
         <Link key={blog.id} href={`/blog/${blog.id}`}>
           <div className="w-[392px] h-[488px] border border-gray-200 rounded-lg p-4 flex flex-col gap-2 cursor-pointer hover:shadow-lg transition-shadow duration-200">
             <div className="w-[360px] h-[240px] overflow-hidden rounded-lg">
-              {/* Use the first image from the blog's images array */}
               <img
-                src={blog.images[0]} // Change to use dynamic image
-                alt={blog.title} // Change alt text to be more descriptive
+                src={blog.images[0]}
+                alt={blog.title}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -37,7 +36,7 @@ const BlogCards: React.FC<BlogCardsProps> = ({ blogs }) => {
               </h3>
               <div className="flex items-center gap-5">
                 <img
-                  src={blog.images[0]} // Change to use dynamic image for author
+                  src={blog.images[0]}
                   alt="Author placeholder"
                   className="w-10 h-10 rounded-full object-cover"
                 />
