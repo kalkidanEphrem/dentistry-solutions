@@ -7,21 +7,23 @@ import NavBar from "./_components/NavBar";
 
 const Home = () => {
   return (
-    <main>
-      <div className="bg-[url(/images/istockphoto-1311511363-612x612.jpg)] bg-no-repeat bg-cover min-h-screen">
-        <NavBar />
+    <>
+      <main>
+        <div className="bg-[url(/images/istockphoto-1311511363-612x612.jpg)] bg-no-repeat bg-cover min-h-screen">
+          <NavBar />
 
-        <Hero />
-      </div>
+          <Hero />
+        </div>
 
-      <InfoCards />
+        <InfoCards />
 
-      <AboutMe />
+        <AboutMe />
 
-      <DentalWorks />
+        <DentalWorks />
 
-      <Signup />
-    </main>
+        <Signup />
+      </main>
+    </>
   );
 };
 

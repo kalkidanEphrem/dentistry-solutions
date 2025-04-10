@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Footer from "./_components/(Footer)/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,10 +23,7 @@ export default function RootLayout({
           href="/icons8-dental-filling-16.png"
         />
       </head>
-      <body className={inter.className}>
-        {children}
-        <Footer />
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
