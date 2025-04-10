@@ -1,13 +1,12 @@
-// blog/page.tsx
 import React from "react";
-import Layout from "../layout"; // Import the Layout component
-import Blogs from "../_components/Blog"; // Your Blogs component to display all blogs
+import Layout from "../layout";
+import Blogs from "../_components/Blog";
 
 export default function Home() {
   return (
     <Layout>
       <div>
-        <Blogs /> {/* Your Blogs component that lists blog entries */}
+        <Blogs />
       </div>
     </Layout>
   );
