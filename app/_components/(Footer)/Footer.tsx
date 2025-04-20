@@ -11,13 +11,13 @@ import { TfiEmail } from "react-icons/tfi";
 
 const Footer = () => {
   return (
-    <footer className="w-full">
-      <section className="min-h-[250px] bg-primary xl:grid-cols-4 md:grid-cols-3 grid-cols-2 grid 2xl:px-24 xl:px-16 sm:px-10 sm:py-12 p-6 text-white font-semibold">
+    <footer className="w-full bg-black">
+      <section className="min-h-[250px] text-primary font-semibold xl:grid-cols-4 md:grid-cols-3 grid-cols-2 grid 2xl:px-24 xl:px-16 sm:px-10 sm:py-12 p-6">
         <div className="flex-col sm:grid sm:grid-cols-2 gap-2 items-center md:flex-col xl:flex-row 2xl:justify-evenly xl:justify-around xl:items-center md:items-start flex md:flex col-span-2 md:col-span-1 xl:col-span-2">
           {/* Brand Logo */}
           <Link className="-mt-1" href="/">
             <Image
-              src="/images/Kal-03.png"
+              src="/icons/logo.png"
               alt="Logo"
               width={300}
               height={50}
@@ -30,36 +30,36 @@ const Footer = () => {
               href="https://www.facebook.com/kalkidan.ephrem"
               target="_blank"
               rel="noreferrer"
-              className="border-gray-300 border-2 rounded-full md:ml-3 hover:cursor-pointer hover:bg-[#1877F2]"
+              className="border-gray-400 hover:border-white border-2 rounded-full md:ml-3 hover:cursor-pointer hover:bg-[#1877F2]"
             >
-              <BiLogoMeta size={30} />
+              <BiLogoMeta size={30} className="text-gray-500 hover:text-white"/>
             </Link>
 
             <Link
               href="https://www.instagram.com/kalkidanephrem_/"
               target="_blank"
               rel="noreferrer"
-              className={`border-gray-300 border-2 rounded-full ml-3 hover:cursor-pointer ${styles.insta}`}
+              className={`border-gray-400 hover:border-white border-2 rounded-full ml-3 hover:cursor-pointer  ${styles.insta}`}
             >
-              <SlSocialInstagram size={30} />
+              <SlSocialInstagram size={30} className="text-gray-500 hover:text-white"/>
             </Link>
 
             <Link
               href="https://twitter.com/ephrem_kalkidan"
               target="_blank"
               rel="noreferrer"
-              className="group border-gray-300 border-2 p-1 rounded-full ml-3 hover:cursor-pointer hover:border-black hover:bg-white"
+              className="group border-gray-400 border-2 p-1 rounded-full ml-3 hover:cursor-pointer hover:border-black hover:bg-white"
             >
-              <RiTwitterXLine size={22} className="group-hover:text-black" />
+              <RiTwitterXLine size={22} className="text-gray-500 group-hover:text-black" />
             </Link>
 
             <Link
               href="https://www.linkedin.com/in/kalkidan-ephrem-92a851230"
               target="_blank"
               rel="noreferrer"
-              className="border-gray-300 border-2 rounded-full ml-3 hover:cursor-pointer hover:bg-[#0072b1]"
+              className="border-gray-400 hover:border-white border-2 rounded-full ml-3 hover:cursor-pointer hover:bg-[#0072b1]"
             >
-              <TiSocialLinkedin size={30} />
+              <TiSocialLinkedin size={30} className="text-gray-500 hover:text-white"/>
             </Link>
           </div>
         </div>
@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
       </section>
 
-      <section className="min-h-[50px] bg-quaternary flex justify-between items-center 2xl:px-24 xl:px-16 md:px-12 sm:px-10 sm:py-5 p-2 text-gray-400">
+      <section className="min-h-[50px] text-primary border-t-2 border-primary mx-12 flex justify-between items-center 2xl:px-24 xl:px-16 md:px-12 sm:px-10 sm:py-5 p-2">
         <p className="2xl:ml-3 xl:ml-10">
           Copyright &copy; DR. Kalkidan Ephrem
         </p>

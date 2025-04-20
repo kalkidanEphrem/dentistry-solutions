@@ -9,16 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#060640",
+        primary: "#EFBF04",
         secondary: "#00E5CC",
         tertiary: "#ECF9FF",
         quaternary: "#000020",
         black: "#000000",
         white: "#ffffff",
+        brown: "#9A6400",
         "card-paragraph": "#9090A7",
         "about-heading-1": "#1C2F41",
         "about-heading-2": "#14A39A",
       },
+    },
+    fontFamily: {
+      inter: ["var(--font-inter)", "sans-serif"],
+      poppins: ["var(--font-poppins)", "sans-serif"],
+      staatliches: ["var(--font-staatliches)", "cursive"],
     },
     screens: {
       xsm: "350px",

@@ -1,36 +1,34 @@
 import Link from "next/link";
-import { RiChatQuoteFill } from "react-icons/ri";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="w-full relative flex flex-col-reverse xl:flex-row 2xl:px-24 xl:px-16 md:px-12 sm:px-6 sm:py-7 p-2 overflow-clip">
-      <div className="w-1/2 p-5 z-10">
-        <h1 className="hidden sm:block text-black font-bold text-2xl sm:text-4xl">
-          DR. Kalkidan Ephrem
-        </h1>
+     <section className="w-full relative flex bg-[url('/images/home/cover.png')] bg-cover min-h-screen">
+      <div className="w-full p-5 z-10">
+        <Image src="/images/home/kalkidan.png" alt="Dr.Kalkidan" width={2800} height={3900}/>
+      </div>
 
-        <div className="flex flex-col justify-around gap-12 sm:mt-14">
-          <p className="text-black font-bold text-2xl lg:text-xl md:text-justify w-full">
-            Your Dental Choice, I strive to be dedicate and treat your teeth,
-            Try to think of me for you and your family's health
-          </p>
+        <div className="flex flex-col items-start mt-16 mr-24">
+          <div className="flex flex-col items-center gap-0">
+            <h1 className="text-black font-bold text-6xl uppercase md:text-justify font-staatliches">
+            Showing Your <br/>Best Smile
+          </h1>
+          <Image src="/images/home/brush.png" alt="hero" className="" width={200} height={5}/>
+        </div>
 
-          <div className="hidden bg-white py-4 px-5 max-w-md rounded-xl lg:flex shadow-lg lg:order-last">
-            <RiChatQuoteFill size={40} className="text-secondary" />
 
-            <p className="text-primary font-bold self-center mt-6">
-              I believe dentistry should be affordable for everyone
+            <p className="text-black font-extralight self-center mt-6 font-poppins">
+              We work to provide the smile you’ve always wished for, combining personalized care with advanced technique.
             </p>
-          </div>
+    
 
           <Link
             href="/"
-            className="py-3 px-9 rounded-md sm:mt-8 font-semibold text-center max-w-min bg-primary text-white hover:cursor-pointer animate-bounce shadow-md"
+            className="py-3 px-9 mx-auto rounded-full sm:mt-8 font-semibold text-center bg-black text-white hover:cursor-pointer animate-bounce shadow-md"
           >
-            Schedule Appointment
+            Schedule Now
           </Link>
         </div>
-      </div>
     </section>
   );
 };

@@ -19,57 +19,56 @@ const NavBar = () => {
       className={clsx(
         "flex justify-between items-center 2xl:px-24 xl:px-16 md:px-12 p-2 sm:px-6",
         {
-          "bg-transparent  text-black text-2xl": pathName === "/",
-          "bg-primary text-white font-semibold": pathName !== "/",
+          "bg-transparent text-black": pathName === "/",
+          "bg-transparent text-black font-semibold": pathName !== "/",
         }
       )}
     >
       <Link href="/">
         <Image
-          src={pathName === "/" ? "/images/Kal-02.png" : "/images/Kal-03.png"}
+          src={pathName === "/" ? "/icons/logo.png" : "/icons/logo.png"}
           alt="Logo"
-          width={pathName === "/" ? 250 : 150}
+          width={130}
           height={57}
         />
       </Link>
 
-      <ul className="hidden lg:flex justify-around py-2 items-center self-end ml-[-2px]">
+      <ul className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-start space-x-12">
         <li
-          className={clsx("text-xl", {
-            "border-b-2 border-black": pathName === "/",
-            "hover:text-secondary": pathName !== "/",
+          className={clsx("text-xl font-semibold font-inter", {
+            "border-b-2 border-primary": pathName === "/",
+            "hover:text-primary": pathName !== "/",
           })}
         >
           <Link href="/">Home</Link>
         </li>
 
         <li
-          className={clsx("mx-5 text-xl", {
-            "text-secondary": pathName === "/about",
-            "hover:text-secondary": pathName !== "/",
+          className={clsx("mx-5 text-xl font-semibold font-inter", {
+            "border-b-2 border-primary": pathName === "/about",
+            "hover:text-primary": pathName !== "/",
           })}
         >
           <Link href="/about">About</Link>
         </li>
 
         <li
-          className={clsx("text-xl", {
-            "text-secondary": pathName === "/contact",
-            "hover:text-secondary": pathName !== "/",
+          className={clsx("text-xl font-semibold font-inter", {
+            "border-b-2 border-primary": pathName === "/dental-services",
+            "hover:text-primary": pathName !== "/",
           })}
         >
-          <Link href="/contact">Contact</Link>
+          <Link href="/dental-services">Services</Link>
         </li>
       </ul>
 
-      {pathName !== "/" && (
+
         <Link
           href="/"
-          className="hidden lg:block py-3 px-5 rounded-md bg-secondary hover:bg-white hover:text-secondary"
+          className="hidden lg:block py-2 px-5 rounded-full bg-black text-white hover:text-primary"
         >
-          Schedule
+          Schedule an Appointment
         </Link>
-      )}
 
       <div
         onClick={handleNav}

@@ -4,42 +4,39 @@ import Link from "next/link";
 const InfoCards = () => {
   return (
     <section className="w-full xl:px-28 md:px-20 px-10 pt-16">
-      <div className="flex flex-col">
-        {/* icon above heading */}
-        <Image
-          src="/icons/heading.svg"
-          width={56}
-          height={25}
-          alt="heading decorative icon"
-          className="sm:self-center sm:ml-32"
-        />
-
-        <h2 className="text-primary font-bold sm:text-center text-3xl sm:text-4xl">
-          DR. Kalkidan Ephrem
-        </h2>
-        <p className="mt-3 mb-5 font-semibold text-xl sm:text-center text-card-paragraph">
-          I'll have you showing your best smile in no time
+      <div className="flex justify-center">
+        <p className="inline-flex items-center font-staatliches text-3xl font-semibold text-black">
+          I'll have you showing your best
+          {/* wrap smile+icon in a vertical flex so “smile” sits above the image */}
+          <span className="flex flex-col items-center text-primary px-2 mt-5">
+            smile
+            <Image
+              src="/images/home/smile.png"
+              width={56}
+              height={25}
+              alt="decorative smile icon"
+            />
+          </span>
+          in no time
         </p>
       </div>
 
       {/* cards */}
       <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-4 xl:gap-6 2xl:gap-28 mt-10 pb-5 pt-10">
         {/* 1st card */}
-        <div className="flex flex-col max-w-sm border-r-2 shadow-sm border-b-2 p-4 rounded-lg md:col-span-2 xl:col-span-1 hover:scale-105 duration-300">
+        <div className="flex flex-col items-center text-center border border-primary max-w-md p-4 translate-y-16 rounded-3xl hover:scale-105 duration-300">
           <Link href="/">
-            {/* 1st card icon */}
             <Image
-              src="/icons/package.svg"
-              width={70}
-              height={72}
+              src="/icons/home/package.png"
+              width={170}
+              height={172}
               alt="package icon"
+              className="mt-8 mx-auto"
             />
-
-            <h3 className="text-primary font-bold text-xl mt-14">
+            <h3 className="font-bold font-staatliches text-xl mt-8">
               Choose Packages
             </h3>
-
-            <p className="mt-5 font-semibold text-justify text-base text-card-paragraph">
+            <p className="mt-5 text-base">
               Explore my dental packages for personalized care. Start your
               journey to optimal oral health today.
             </p>
@@ -47,21 +44,19 @@ const InfoCards = () => {
         </div>
 
         {/* 2nd card */}
-        <div className="flex flex-col max-w-sm p-4 xl:border-hidden border-r-2 shadow-sm border-b-2 rounded-lg md:col-span-2 lg:col-start-2 xl:col-span-1 xl:shadow-xl order-2 xl:order-1 hover:scale-105 duration-300">
+        <div className="flex flex-col items-center text-center mx-auto border border-primary max-w-md p-6 rounded-3xl md:col-span-2 lg:col-start-2 xl:col-span-1 xl:shadow-xl order-2 xl:order-1 hover:scale-105 duration-300">
           <Link href="/">
-            {/* 2nd card icon */}
             <Image
-              src="/icons/calander.svg"
-              width={70}
-              height={77}
-              alt="calander icon"
+              src="/icons/home/services.png"
+              width={170}
+              height={177}
+              alt="calendar icon"
+              className="mt-8 mx-auto"
             />
-
-            <h3 className="text-primary font-bold text-xl mt-14">
-              Schedule appointment
+            <h3 className="font-bold font-staatliches text-xl mt-8">
+              Schedule Appointment
             </h3>
-
-            <p className="mt-5 font-semibold text-justify text-base text-card-paragraph">
+            <p className="mt-5 text-base">
               Your Perfect Smile Awaits: Schedule Your Dental Care Appointment
               Today for a Lifetime of Radiant, Healthy Teeth and Unmatched Oral
               Wellness!
@@ -70,21 +65,21 @@ const InfoCards = () => {
         </div>
 
         {/* 3rd card */}
-        <div className="flex flex-col max-w-sm p-4 border-r-2 shadow-sm border-b-2 md:col-start-2 lg:col-start-3 rounded-lg order-1 hover:scale-105 duration-300">
+        <div className="flex flex-col items-center text-center mx-auto border border-primary max-w-md p-6 translate-y-16 rounded-3xl order-1 hover:scale-105 duration-300">
           <Link href="/">
-            {/* 3rd card icon */}
             <Image
-              src="/icons/graph.svg"
-              width={70}
-              height={70}
+              src="/icons/home/schedule.png"
+              width={170}
+              height={170}
               alt="graph icon"
+              className="mt-8 mx-auto"
             />
-
-            <h3 className="text-primary font-bold text-lg mt-14">Services</h3>
-
-            <p className="mt-5 font-semibold text-justify text-base text-card-paragraph">
+            <h3 className="font-bold font-staatliches text-xl mt-8">
+              Services
+            </h3>
+            <p className="mt-5 text-base">
               I'm now offering a variety of dental services including cosmetic
-              dentistry and children's dentistry
+              dentistry and children's dentistry.
             </p>
           </Link>
         </div>

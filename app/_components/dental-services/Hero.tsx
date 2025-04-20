@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden">
       <Image
-        src="/images/dental-services/hero-image.svg"
+        src="/images/dental-services/hero.png"
         width={1000}
         height={1000}
         alt="services background image"
